@@ -1,0 +1,26 @@
+.image-cover {
+  opacity: 0;
+  transform: scale(0.8);
+  transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+}
+
+.image-cover.animate {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.modal-body-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 0;
+}
+
+.modal-body-image img {
+  max-height: 90vh;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+/*---------------------------------------------- Animation */

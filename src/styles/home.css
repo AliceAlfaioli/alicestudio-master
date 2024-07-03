@@ -1,0 +1,333 @@
+body {
+  font-family: "Cinzel";
+}
+
+.home-page {
+  position: relative;
+  height: 100vh;
+  background: url("../../public/img/boy-girl\ senza\ firma\ \(596\,8\ KB\).jpg") no-repeat center center;
+  background-size: cover;
+  color: white;
+}
+
+/* 
+NAVBAR */
+/* .nav-section {
+  display: flex;
+  padding: 38px 0;
+  justify-content: center;
+  gap: 10px;
+} */
+
+.navbar-nav .nav-link {
+  color: rgb(255, 255, 255) !important;
+  transition: color 0.3s;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #ffeb3b !important;
+}
+
+/* ------------------------------------------------------- */
+
+.navbar-nav .nav-link {
+  position: relative;
+  font-size: 1.2em;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #007bff; /* Cambia il colore durante il passaggio del cursore */
+  transform: scale(1.1);
+}
+
+.navbar-nav .nav-link::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #007bff;
+  transition: width 0.3s ease;
+  margin: auto;
+}
+
+.navbar-nav .nav-link:hover::after {
+  width: 100%;
+}
+
+.logo-img {
+  max-width: 100%;
+  height: auto;
+  width: 270px;
+
+  margin: 45px;
+}
+
+/* --------------------quote-section----------------------- */
+
+.quote-section {
+  position: absolute;
+  bottom: 80px;
+  color: white;
+  margin: 100px;
+  font-style: italic;
+  font-size: 35px;
+  transition: left 0.5s ease-in-out;
+}
+
+/*------------------------------ MEDIA QUERIES per la responsività */
+@media (max-width: 992px) {
+  .quote-section {
+    bottom: 100px; /* Regolato per tablet */
+    left: 0;
+    max-width: calc(100% - 40px);
+    font-size: 28px;
+    text-align: center; /* Allinea il testo al centro su tablet */
+  }
+}
+
+@media (max-width: 768px) {
+  .quote-section {
+    bottom: 50px; /* Regolato per mobile */
+    left: 0;
+    max-width: calc(100% - 40px); /* Adatta la larghezza su mobile */
+    font-size: 20px;
+    text-align: center; /* Allineo il testo al centro su mobile */
+  }
+}
+
+/* Aggiungi una classe per l'animazione */
+
+@media (max-width: 768px) {
+  .quote-section {
+    height: 99px; /* Altezza alternativa per schermi più piccoli */
+  }
+}
+
+@keyframes textAnimation {
+  0% {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  50% {
+    opacity: 0.5;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.text-overlay p {
+  font-size: 1em;
+  color: #fdfdfd;
+  animation: textAnimation 3s ease-in-out infinite; /* Durata e tempi dell'animazione */
+}
+
+/* home.css */
+
+.custom-nav {
+  margin-right: 80px;
+}
+
+.custom-nav-link {
+  margin-right: 5px;
+}
+
+.custom-nav-link:last-child {
+  margin-right: 0;
+}
+
+/* ************SOCIAL MEDIA ************** */
+
+/* Aggiungi questa classe nel tuo file home.css */
+.custom-nav-link {
+  color: #000; /* Colore del testo */
+  padding: 0.5rem; /* Padding per il link */
+}
+
+.custom-nav-link:hover {
+  color: #f39c12; /* Colore del testo al passaggio del mouse */
+}
+
+/* -------------TENDINA CONTATTI -------------------- */
+
+.home-page {
+  font-family: "Cinzel";
+  color: #333;
+}
+
+/* Stili per la sezione della logo */
+.logo-section .logo-img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Stili per la Navbar */
+.custom-nav-link {
+  position: relative;
+  color: #555;
+  font-size: 20px;
+  padding: 10px 15px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.custom-nav-link:hover {
+  color: #007bff;
+  transform: scale(1.1);
+}
+
+/* Stili per il popup dei contatti */
+.contact-popup {
+  position: absolute;
+  top: 50px;
+  right: 0;
+  background: rgba(50, 50, 50, 0.85); /* Colore grigio scuro trasparente */
+
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+  z-index: 10;
+  opacity: 2;
+  transform: perspective(600px) rotateX(90deg);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+  text-align: left;
+  width: 270px; /* Larghezza appropriata */
+  font-family: "Cinzel"; /* Font più professionale */
+}
+
+.custom-nav-link:hover .contact-popup {
+  opacity: 1;
+  transform: perspective(600px) rotateX(0);
+}
+
+.contact-popup::before {
+  content: "";
+  position: absolute;
+
+  right: 20px;
+  border-color: transparent transparent rgba(50, 50, 50, 0.85) transparent; /* Coordinato con lo sfondo */
+}
+
+.contact-popup .popup-header {
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 5px;
+  color: white; /* Testo bianco per il contrasto */
+  text-align: center;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.contact-popup ul {
+  list-style: none;
+  padding: 0;
+}
+
+.contact-popup li {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  color: white; /* Testo bianco per il contrasto */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.contact-popup li:last-child {
+  margin-bottom: 0;
+}
+
+.contact-popup li .icon {
+  margin-right: 10px;
+  color: #ffc107; /* Colore distintivo per le icone */
+  font-size: 21px;
+}
+
+/* Effetti di animazione 3D */
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.custom-nav-link:hover .contact-popup {
+  animation: float 2s ease-in-out infinite;
+}
+
+/* Stili per la sezione della citazione */
+.quote-section p {
+  font-size: 45px;
+  font-weight: 300;
+  color: #ffffff;
+}
+
+/* -------------TENDINA PORTFOLIO -------------------- */
+.portfolio-dropdown {
+  position: absolute;
+  background-color: #222; /* Colore di sfondo */
+  border: 1px solid rgba(255, 255, 255, 0.1); /* Bordo chiaro per contrasto */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Ombra più marcata */
+  padding: 20px; /* Spazio interno */
+  margin-top: 20px;
+  z-index: 1000;
+  width: 260px; /* Larghezza */
+  border-radius: 20px; /* Angoli arrotondati */
+  color: white; /* Testo bianco */
+  font-family: "Cinzel"; /* Font personalizzato */
+  opacity: 0;
+  transform: translateY(-20px) scale(0.8); /* Ridimensiona leggermente */
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  overflow: hidden; /* Nasconde overflow */
+  background-image: radial-gradient(circle at 50% 150%, #333, #333); /* Sfondo a gradiente radiale */
+}
+
+.portfolio-dropdown::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  opacity: 0.3; /* Opacità dell'immagine di sfondo */
+  z-index: -1;
+  transition: opacity 0.3s ease;
+}
+
+.portfolio-dropdown.show {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+
+.portfolio-dropdown:hover::before {
+  opacity: 0.5; /* Opacità aumentata al passaggio del mouse */
+}
+
+.portfolio-dropdown ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.portfolio-dropdown li {
+  margin-bottom: 20px;
+}
+
+.portfolio-dropdown li a {
+  text-decoration: none;
+  color: white; /* Colore del testo */
+
+  font-size: 18px; /* Dimensione del testo */
+  transition: color 0.3s ease; /* Transizione del colore */
+}
+
+.portfolio-dropdown li a:hover {
+  color: #e9b421; /* Cambio colore al passaggio del mouse */
+}

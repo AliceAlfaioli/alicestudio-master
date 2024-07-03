@@ -1,0 +1,24 @@
+.photo-gear-showcase {
+  margin-top: 100px;
+}
+
+.gear-card {
+  margin-bottom: 190px;
+  cursor: pointer;
+}
+
+.gear-card .card {
+  overflow: hidden;
+  border: none;
+}
+
+.gear-card .card-body {
+  background: linear-gradient(to top, rgba(243, 189, 39, 0.7), transparent);
+  color: #131212;
+  position: relative;
+}
+
+.gear-card .card-img-top {
+  object-fit: cover;
+  height: 200px; /* Altezza desiderata dell'immagine */
+}

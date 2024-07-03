@@ -1,0 +1,222 @@
+.photo-session-page {
+  background: url("../components/Footer/background-image/FOOTERMODIFICA.jpg") no-repeat center center;
+  background-size: cover;
+}
+
+.form-container {
+  background-color: rgb(128, 117, 117);
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+}
+
+.footer {
+  width: 100%;
+  text-align: center;
+  background-color: #333;
+  color: white;
+  padding: 2rem 0;
+}
+
+.footer a {
+  color: white;
+  text-decoration: none;
+}
+
+.booking-form .form-control {
+  border-radius: 0;
+}
+
+.booking-form .btn {
+  width: 100%;
+  border-radius: 0;
+}
+
+/* Aggiungi una keyframe per l'animazione */
+@keyframes fadeInAndGrow {
+  0% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* ------------------------------------------------------Classe per applicare l'animazione */
+.title-animated {
+  animation: fadeInAndGrow 1s ease-in-out;
+}
+
+/*---------------------------------------------- Animazione per il contenitore del form */
+.booking-form {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.booking-form:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* -------------------------------------Animazione per gli input e il button del form */
+.booking-form input,
+.booking-form textarea,
+.booking-form button {
+  transition: transform 0.2s ease;
+}
+
+.booking-form input:hover,
+.booking-form textarea:hover,
+.booking-form button:hover {
+  transform: scale(1.05);
+}
+
+/*------------------------------------------------------- Keyframe per l'animazione */
+@keyframes hoverFadeInAndGrow {
+  0% {
+    opacity: 0.5;
+    transform: scale(0.9);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1.1);
+  }
+}
+
+/*----------------------- Classe per applicare l'animazione al passaggio del mouse */
+.title-hover-animated {
+  display: inline-block;
+  transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+.title-hover-animated:hover {
+  animation: hoverFadeInAndGrow 0.5s ease-in-out forwards;
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+/* ------------------------------------CONTACTS */
+
+.contact-info {
+  color: #928282;
+}
+
+.contact-info p {
+  margin-bottom: 5px;
+}
+
+.highlight-text {
+  font-size: 1.2em;
+  text-align: center;
+}
+
+/*------------------------------------------------------- COOKIE*/
+
+.cookie-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.photo-session-page {
+  background-color: #dbd1d1;
+  padding: 50px 0;
+}
+
+.form-container {
+  background: #faf3f3;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(59, 58, 58, 0.1);
+}
+
+.title-hover-animated:hover {
+  color: #007bff;
+  transition: color 0.3s ease;
+}
+
+.highlight-text {
+  font-style: italic;
+  color: #333;
+}
+
+.footer {
+  background-color: #1c1c1c;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+  position: relative;
+  width: 100%;
+  padding: 30px;
+}
+
+.footer {
+  background-color: #222;
+  color: #ccc;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.contact-info,
+.about-company {
+  flex: 1;
+  margin: 10px;
+}
+
+.contact-info p,
+.about-company p {
+  margin: 10px 0;
+}
+
+.contact-info .icon {
+  font-size: 18px;
+  margin-right: 10px;
+}
+
+.contact-info a {
+  color: #4a90e2;
+}
+
+.about-company h4 {
+  font-weight: bold;
+  color: #fff;
+}
+
+.social-icons {
+  display: flex;
+  gap: 10px;
+}
+
+.social-icons a img {
+  width: 24px;
+  height: 24px;
+}
+
+.footer-bottom {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  border-top: 1px solid #444;
+  padding-top: 10px;
+  font-size: 14px;
+}
+
+.footer-bottom a {
+  color: #4a90e2;
+  text-decoration: none;
+}
+
+.footer-bottom a:hover {
+  text-decoration: underline;
+}

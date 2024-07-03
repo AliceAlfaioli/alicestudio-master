@@ -1,0 +1,210 @@
+/* Photostory.css */
+.photostory-container {
+  height: 40vh;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon {
+  animation: fadeIn 2s linear;
+  margin: 10px;
+}
+
+/* .icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: #ece7e7;
+  margin: 20px;
+} */
+
+.icon {
+  font-size: 30px;
+  color: #7a7575;
+}
+
+/* ------------------------------- MOBILE */
+@media (max-width: 767px) {
+  .icon {
+    font-size: 50px;
+  }
+  .photostory-title {
+    font-size: 24px;
+    margin: 20px 0px;
+  }
+  .photostory-quote {
+    font-size: 20px;
+    font-style: italic;
+    margin: -100px -20px;
+    text-align: justify;
+  }
+}
+
+/* ----------------------------TABLET */
+@media (min-width: 768px) and (max-width: 991px) {
+  .icon {
+    font-size: 40px;
+  }
+  .photostory-title {
+    font-size: 28px;
+    margin: 10px 0;
+  }
+  .photostory-quote {
+    font-size: 18px;
+    font-style: italic;
+    margin: 0 20px;
+    text-align: justify;
+  }
+}
+
+/* ------------------------------- DESKTOP */
+@media (min-width: 992px) {
+  .icon {
+    font-size: 30px;
+  }
+  .photostory-title {
+    font-size: 36px;
+    margin: 10px 0;
+  }
+  .photostory-quote {
+    font-size: 20px;
+    font-style: italic;
+    margin: 0 170px;
+    text-align: justify;
+  }
+}
+
+/* ------------------------Add Animation  */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* photostory.css */
+.photostory-container {
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+.icon-container {
+  display: inline-block;
+  padding: 15px;
+  border-radius: 50%;
+  box-shadow: 0 30px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.icon-container:hover {
+  transform: scale(1.1);
+}
+
+.icon-yellow {
+  color: #e4bf51;
+}
+
+.icon-red {
+  color: #dd6c77;
+}
+
+.icon-green {
+  color: #6278be;
+}
+
+.photostory-title {
+  font-size: 2.5rem;
+  color: #333;
+}
+
+.photostory-quote {
+  font-size: 1.2rem;
+  color: #666;
+  margin: 0;
+  padding: 0 20px;
+}
+
+.photostory-container {
+  padding: 10px;
+  background-color: #f9f9f9;
+}
+
+.icon-container {
+  display: inline-block;
+  padding: 5px;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background: linear-gradient(145deg, #e6e6e6, #ffffff);
+  box-shadow: 4px 4px 8px #bebebe, -4px -4px 8px #ffffff;
+}
+
+.icon-container:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.icon-yellow {
+  color: #ffc107;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.icon-red {
+  color: #dc3545;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.icon-green {
+  color: #28a745;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.photostory-title {
+  font-size: 2.5rem;
+  color: #333;
+}
+
+.photostory-quote {
+  font-size: 1.2rem;
+  color: #666;
+  margin: 0;
+  padding: 0 20px;
+}
+
+@keyframes rotate-3d {
+  0% {
+    transform: rotate3d(1, 1, 0, 0deg);
+  }
+  25% {
+    transform: rotate3d(1, 1, 0, 15deg);
+  }
+  50% {
+    transform: rotate3d(1, 1, 0, 0deg);
+  }
+  75% {
+    transform: rotate3d(1, 1, 0, -15deg);
+  }
+  100% {
+    transform: rotate3d(1, 1, 0, 0deg);
+  }
+}
+
+.icon-container:hover .icon {
+  animation: rotate-3d 2s ease-in-out infinite;
+}
